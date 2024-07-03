@@ -30,6 +30,7 @@
 
 */
 
+
 // Step 1: MACHINE CHOICE LOGIC
 
 // Create a new function named "getComputerChoice".
@@ -37,22 +38,32 @@ function getComputerChoice() {
 
   // Write the code so this function randomly returns one of the following string values: "rock", "paper", "scissors".
 
-    // Create a variable named computerChoice to store the computer's choice.
+    // Create a variable named "computerChoice" to store the computer's choice.
     // Initialize it with a random numeric value between 0 and 99.
-    let computerChoice = Math.random() * 100;
+  let computerChoice = Math.random() * 100;
   
     // Create a condition where:
       // If the random number value is between 0 and 33, the variable computerChoice is assigned the value "rock".
       // If the random number value is between 34 and 66, the variable computerChoice is assigned the value "paper".
       // If the random number value is between 67 and 99, the variable computerChoice is assigned the value "scissors".
-    if (computerChoice <= 33) {
-      computerChoice = "rock";
-    } else if (computerChoice > 33 && computerChoice <= 66) {
-      computerChoice = "paper";
-    } else {
-      computerChoice = "scissors";
-    }
+  if (computerChoice <= 33) {
+    computerChoice = "rock";
+  } else if (computerChoice > 33 && computerChoice <= 66) {
+    computerChoice = "paper";
+  } else {
+    computerChoice = "scissors";
+  }
   
     // Return the variable "computerChoice".
-    return computerChoice;
-  }
+  return computerChoice;
+}
+
+
+// Step 2: USER CHOICE LOGIC
+
+// Create a new function named "getHumanChoice".
+function getHumanChoice() {
+
+  // Write the code so this function returns the user choice data.
+  return prompt("What's your choice?");
+}
