@@ -67,3 +67,10 @@ function getHumanChoice() {
   // Write the code so this function returns the user choice data.
   return prompt("What's your choice?");
 }
+
+// Step 3: PLAYERS SCORE VARIABLES
+
+// Declare two variables named "humanScore" and "computerScore" in the global scope to keep track of the players score.
+// Initialize them with the value of 0.
+let humanScore = 0;
+let computerScore = 0;
