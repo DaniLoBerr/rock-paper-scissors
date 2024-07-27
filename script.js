@@ -1,0 +1,6 @@
+function playGame() {}
+
+const startButton = document.querySelector("#start");
+startButton.addEventListener("click", () => {
+  playGame();
+});
